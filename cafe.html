@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BigCafe' - Maryland's Favorite Café</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .logo-font {
+      font-family: 'Pacifico', cursive;
+    }
+
+    #about{
+        margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+<!-- Navbar -->
+<header class="fixed top-0 w-full z-50 bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#top">
+        <h1 class="text-2xl font-bold logo-font text-yellow-700 hover:text-yellow-600 transition">BigCafe'</h1>
+      </a>
+  
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#about" class="hover:text-yellow-600">About</a>
+        <a href="#menu" class="hover:text-yellow-600">Menu</a>
+        <a href="#amenities" class="hover:text-yellow-600">Amenities</a>
+        <a href="#gallery" class="hover:text-yellow-600">Gallery</a>
+        <a href="#contact" class="hover:text-yellow-600">Contact</a>
+      </nav>
+  
+      <!-- Mobile Toggle Button -->
+      <button id="menuToggle" class="md:hidden focus:outline-none text-2xl text-yellow-700">
+        ☰
+      </button>
+    </div>
+  
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden flex-col space-y-4 px-6 py-4 bg-white shadow-lg">
+      <a href="#about" class="block text-gray-700 hover:text-yellow-600">About</a>
+      <a href="#menu" class="block text-gray-700 hover:text-yellow-600">Menu</a>
+      <a href="#amenities" class="block text-gray-700 hover:text-yellow-600">Amenities</a>
+      <a href="#gallery" class="block text-gray-700 hover:text-yellow-600">Gallery</a>
+      <a href="#contact" class="block text-gray-700 hover:text-yellow-600">Contact</a>
+    </div>
+  </header>
+  
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-cover bg-center flex items-center justify-center text-center" style="background-image: url('assets/images/hero4.webp');">
+    <div class="bg-black bg-opacity-50 p-6 rounded-lg max-w-xl mt-16 md:mt-0">
+      <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">Welcome to BigCafe'</h2>
+      <p class="text-white text-lg mb-6">Your cozy retreat in Maryland — for locals, tourists, and remote workers alike.</p>
+      <a href="#menu" class="bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-400 transition">See Our Menu</a>
+    </div>
+  </section>
+
+ <!-- About Section with Jumbotron -->
+<section id="about" class="relative bg-cover bg-center bg-no-repeat py-28 px-6 text-white" style="background-image: url('assets/images/jumbo1.jfif');" data-aos="fade-up">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  
+    <div class="relative max-w-4xl mx-auto text-center z-10">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">About BigCafe'</h2>
+      <p class="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
+        Nestled in the heart of Maryland, <strong>BigCafe'</strong> is more than just a café — it's a cozy community space. We bring together locals, tourists, and digital workers with warm brews, fresh bakes, and good vibes. 
+      </p>
+    </div>
+  </section>
+  
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12">Popular Menu Items</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-xl transition">
+          <img src="assets/images/latte.jpg" class="w-full rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Signature Latte</h3>
+          <p class="text-gray-600">Smooth espresso with steamed milk and a touch of vanilla.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-xl transition">
+          <img src="assets/images/butter.jfif" class="w-full rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Butter Croissant</h3>
+          <p class="text-gray-600">Flaky, buttery, and baked fresh daily in-house.</p>
+        </div>
+        <div class="bg-white shadow rounded-lg p-6 hover:shadow-xl transition">
+          <img src="assets/images/iced3.jpg" class="w-full rounded mb-4" />
+          <h3 class="text-xl font-semibold mb-2">Iced Brew</h3>
+          <p class="text-gray-600">Perfectly chilled and bold — your summer go-to drink.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Amenities Section -->
+<section id="amenities" class="py-20 px-6 bg-yellow-50" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 text-gray-800">Why People Love BigCafe'</h2>
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
+        
+        <!-- Amenity Card -->
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in">
+          <div class="text-5xl mb-4">📶</div>
+          <h4 class="font-semibold text-lg text-gray-700">Free Wi-Fi</h4>
+          <p class="text-gray-500 text-sm mt-1">Stay connected while you sip your latte.</p>
+        </div>
+  
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="100">
+          <div class="text-5xl mb-4">🔌</div>
+          <h4 class="font-semibold text-lg text-gray-700">Charging Ports</h4>
+          <p class="text-gray-500 text-sm mt-1">Every seat powered for productivity.</p>
+        </div>
+  
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-5xl mb-4">☕</div>
+          <h4 class="font-semibold text-lg text-gray-700">Quality Coffee</h4>
+          <p class="text-gray-500 text-sm mt-1">Locally roasted, perfectly brewed.</p>
+        </div>
+  
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="300">
+          <div class="text-5xl mb-4">🌿</div>
+          <h4 class="font-semibold text-lg text-gray-700">Outdoor Seating</h4>
+          <p class="text-gray-500 text-sm mt-1">Enjoy the breeze with every bite.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="assets/images/paradise-road-the-gallery.jpg" class="rounded shadow" />
+        <img src="assets/images/gallery 2.avif" class="rounded shadow" />
+        <img src="assets/images/gallery 5.jpg" class="rounded shadow" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 px-6 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10">What Our Visitors Say</h2>
+      <blockquote class="italic text-gray-700">“BigCafe' was the highlight of our Maryland trip! Amazing vibe, friendly staff, and coffee that hits the spot every time.” <br><span class="font-bold">– Laura, Tourist</span></blockquote>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-white">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
+      <form class="grid gap-4">
+        <input type="text" placeholder="Your Name" class="border p-3 rounded" required>
+        <input type="email" placeholder="Your Email" class="border p-3 rounded" required>
+        <textarea placeholder="Message" class="border p-3 rounded" rows="4"></textarea>
+        <button type="submit" class="bg-yellow-500 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-500 text-black py-6 text-center">
+    <p>&copy; 2025 BigCafe' • Built with love in Maryland</p>
+  </footer>
+
+
+  <script>
+    const toggleBtn = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+  
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+</body>
+</html>
